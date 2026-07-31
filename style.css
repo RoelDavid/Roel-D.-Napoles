@@ -86,6 +86,40 @@ button {
   width: 100%;
 }
 
+input, textarea {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid white;
+  height: 40px;
+  transition: all 400ms ease;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+  margin-top: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+input:hover, textarea:hover {
+  border-color: white;
+}
+
+input:focus, textarea:focus {
+  border-color: #C89B3C;
+}
+
 /*
 
 LANDING PAGE
@@ -243,13 +277,14 @@ MODAL
 .modal__half {
   width: 50%;
   padding: 40px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 .modal__about {
   background-color: rgb(245, 245, 245);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .modal__title {
@@ -258,6 +293,7 @@ MODAL
 
 .modal__subtitle {
   margin: 12px 0 24px 0;
+  font-size: 14px;
 }
 
 .modal__para {
@@ -301,8 +337,81 @@ MODAL
 }
 
 .modal__contact {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   color: white;
+}
+
+.form__submit {
+  background-color: #C89B3C;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+  padding: 12px 24px;
+  user-select: none;
+  margin-top: 40px;
+}
+
+.form__submit:hover {
+  background-color: #000000;
+}
+
+.form__submit:active {
+  border-color: #C89B3C;
+  color: #C89B3C;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__overlay--loading {
+  background-color: black;
+  font-size: 60px;
+  z-index: -1;
+}
+
+.fa-spinner {
+  animation: spinner 2000ms infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal__overlay--succes {
+  background-color: #4bb543;
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  text-align: center;
+  padding: 28px;
+}
+
+.modal__exit {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+  z-index: 100;
 }
 
 /*
