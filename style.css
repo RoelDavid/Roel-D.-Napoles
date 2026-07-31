@@ -374,12 +374,12 @@ MODAL
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .modal__overlay--loading {
   background-color: black;
   font-size: 60px;
-  z-index: -1;
 }
 
 .fa-spinner {
@@ -395,7 +395,7 @@ MODAL
   }
 }
 
-.modal__overlay--succes {
+.modal__overlay--success {
   background-color: #4bb543;
   font-size: 40px;
   font-weight: 700;
@@ -412,6 +412,10 @@ MODAL
   font-size: 36px;
   cursor: pointer;
   z-index: 100;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
 }
 
 /*
