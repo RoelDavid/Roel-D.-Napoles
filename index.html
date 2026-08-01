@@ -48,18 +48,18 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
-              href=""
+              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black link__hover-effect"
               >Contact!</a
             >
           </li>
           <li class="nav__link click">
             <a
-              href=""
+              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fa-solid fa-circle-half-stroke"></i
+              ><i class="fa-solid fa-circle-half-stroke" onclick="toggleContrast()"></i
             ></a>
           </li>
         </ul>
@@ -73,8 +73,8 @@
             passion for building web application with great user experiences.
             <br />
             Here's a bit more
-            <a href="" class="header__about-me"
-              ><b class="gold">about me.</b></a
+            <a href="#" class="header__about-me"
+              ><b class="gold" onclick="toggleModal()">about me.</b></a
             >
           </p>
           <div class="social__list">
@@ -94,7 +94,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -141,6 +141,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h3 class="modal__subtitle modal__subtitle--contact">
             I'm currently open to new oportunities
@@ -173,7 +174,6 @@
           <div class="modal__overlay modal__overlay--success">
             Thank you for your message. I will reply as soon as possible.
           </div>
-          <i class="fas fa-times modal__exit click"></i>
         </div>
       </div>
     </section>
