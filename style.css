@@ -227,6 +227,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 
 .scroll {
@@ -608,4 +609,60 @@ footer {
 .footer__social--link,
 .footer__copyright {
   color: white;
+}
+
+/* 
+
+SHAPES 
+
+*/
+
+.shape {
+  width: 20px;
+  position: fixed;
+}
+
+.shape__1 {
+  top: 15vh;
+  left: 5vw;
+}
+
+.shape__2 {
+  top: 15vh;
+  left: 50vw;
+}
+
+.shape__3 {
+  top: 15vh;
+  left: 80vw;
+}
+
+.shape__4 {
+  top: 50vh;
+  left: 5vw;
+}
+
+.shape__5 {
+  top: 50vh;
+  left: 50vw;
+}
+
+.shape__6 {
+  top: 50vh;
+  left: 80vw;
+}
+
+.shape__7 {
+  top: 80vh;
+  left: 5vw;
+}
+
+.shape__8 {
+  top: 80vh;
+  left: 50vw;
+}
+
+.shape__9 {
+  top: 80vh;
+  left: 80vw;
 }
