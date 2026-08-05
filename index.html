@@ -34,16 +34,16 @@
           />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
-              href=""
+              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black link__hover-effect"
               >About</a
             >
           </li>
           <li class="nav__link">
             <a
-              href=""
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black link__hover-effect"
               >Projects</a
             >
@@ -81,7 +81,12 @@
             >
           </p>
           <div class="social__list">
-            <a href="" target="_blank" class="social__link click">
+            <a
+              href=""
+              target="_blank"
+              class="social__link click"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin"></i>
             </a>
             <a
@@ -91,17 +96,21 @@
             >
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="" class="social__link click">
+            <a href="" class="social__link click" target="_blank">
               <i class="fa-solid fa-file-pdf"></i>
             </a>
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fa-solid fa-envelope"></i>
-      </button>
+
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+      </a>
+
       <a href="#projects" class="scroll">
-        <div class="scroll__icon clik"></div>
+        <div class="scroll__icon click"></div>
       </a>
 
       <div class="modal">
@@ -189,7 +198,7 @@
       <img src="assets\triangle.svg" class="shape shape__8" />
       <img src="assets/semi circle.svg" class="shape shape__9" />
     </section>
-    <section class="projects">
+    <section id="projects">
       <div class="row">
         <h1 class="section__title">
           Here are some of my <span class="gold">Projects</span>
@@ -324,23 +333,27 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href=""
+              href="https://github.com/RoelDavid"
               class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
               >Github
             </a>
             <a
               href=""
               class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
               >Linkedin
             </a>
             <a
-              href=""
+              href="#"
+              onclick="toggleModal()"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >Contact
             </a>
             <a
               href=""
               class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
               >Resume
             </a>
           </div>
