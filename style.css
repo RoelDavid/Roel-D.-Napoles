@@ -696,7 +696,6 @@ SMALL PHONES, TABLETS, AND LARGE PHONES
     height: auto;
     width: 100%;
     flex-direction: column-reverse;
-    boreder-radius: 0;
   }
   .modal__half {
     width: 100%;
@@ -709,6 +708,9 @@ SMALL PHONES, TABLETS, AND LARGE PHONES
   }
   .project__description--subtitle {
     font-size: 20px;
+  }
+  .shape {
+    display: none;
   }
 }
 
