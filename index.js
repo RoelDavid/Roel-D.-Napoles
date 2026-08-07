@@ -18,8 +18,7 @@ function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
     document.body.classList += " dark-theme";
-  }
-  else {
+  } else {
     document.body.classList.remove("dark-theme");
   }
 }
@@ -43,7 +42,7 @@ function contact(event) {
     .catch(() => {
       loading.classList.remove("modal__overlay--visible");
       alert(
-        "The email service is temporarily unavailable. Please contact me directly on email@email.com",
+        "The email service is temporarily unavailable. Please contact me directly on leindaguen@gmail.com",
       );
     });
 }
